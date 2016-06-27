@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* =============================================================================
+   DÉFINITION D'UNE MISE EN FORME DES CONTENUS
+   ============================================================================= */
+
+html .mceContentBody {
+    max-width: 620px;
+    font-family: sans-serif;
+}
+
+html .mceContentBody,
+.post-content {
+    font-size: 12px;
+}
+
+html .mceContentBody h1,
+html .mceContentBody h2,
+html .mceContentBody h3,
+html .mceContentBody h4,
+html .mceContentBody h5,
+html .mceContentBody h6,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    clear: both;
+}
+
+html .mceContentBody img,
+.post-content img {
+    height: auto;
+    max-width: 100%;
+}
+
+html .mceContentBody p,
+.post-content p {
+    margin-bottom: 16px;
+    line-height: 16px;
+}
+
+html .mceContentBody p:last-child,
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+html .mceContentBody a,
+.post-content a {
+    text-decoration: underline;
+}
+
+html .mceContentBody ul,
+html .mceContentBody ol,
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1em;
+    list-style: square inside none;
+}
+
+html .mceContentBody ol,
+.post-content ol {
+    list-style: decimal inside none;
+}
+
+html .mceContentBody ul li,
+html .mceContentBody ol li,
+.post-content ul li,
+.post-content ol li {
+    margin-left: 20px;
+    line-height: 16px;
+}
+
+/* =============================================================================
+   STYLES SPECIFIQUES A WORDPRESS
+   ============================================================================= */
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 12px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 12px;
+}
+
+.wp-caption {
+    margin: 10px;
+    padding-top: 4px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 0;
+    padding: 0 4px 5px;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+/* Fix more
+-------------------------- */
+
+.mceWPnextpage,
+.mceWPmore {
+    display: block!important;
+    width: 95%!important;
+    height: 12px!important;
+    border: 0!important;
+    border-top: 1px dotted #cccccc!important;
+}
+
+/* ----------------------------------------------------------
+   Formats de posts Spéciaux
+---------------------------------------------------------- */
+
+/* Aide visuelle pour l'éditeur */
+
+html .mceContentBody .post-format1,
+html .mceContentBody .post-format1 > * {
+    outline: 1px dotted #e0e0e0;
+}
+
+.post-format1 {
+    margin-bottom: 20px;
+}
+
+.post-format1 > .col1 {
+    padding-right: 10px;
+}
+
+.post-format1 > .col2 {
+    padding-left: 10px;
+}
+
+.post-format1 > .col3 {
+    padding-top: 10px;
+}
+
+.post-format1 > * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.post-format1 > .col1,
+.post-format1 > .col2 {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    *float: left;
+}
+
+.post-format1 > .col3 {
+    clear: both;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.post-format1 > .col3 > p:first-child {
+    margin-top: 0;
+}

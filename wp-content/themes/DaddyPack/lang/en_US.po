@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CLRZ Lang\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-02 10:43+0100\n"
+"PO-Revision-Date: 2013-12-02 10:44+0100\n"
+"Last-Translator: \n"
+"Language-Team: Colorz\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../.\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# Page 404
+#: 404.php:10
+msgid "Erreur, ce fichier n'existe pas"
+msgstr "Error, this file doesn't exist"
+
+#: 404.php:19
+msgid "Page non trouv&eacute;e"
+msgstr "Page not found"
+
+#: 404.php:28
+#, php-format
+msgid "Voici quelques r&eacute;sultats de recherche pour \"%s\":"
+msgstr "Here are some search results for \"%s\":"
+
+#: archive.php:10 archive.php:12 archive.php:14
+msgid "Archives"
+msgstr "Archives"
+
+#: archive.php:16
+msgid "Tag"
+msgstr "Tag"
+
+# Loops
+#: archive.php:19
+msgid "Auteur"
+msgstr "Author"
+
+#: archive.php:21
+msgid "Categorie"
+msgstr "Category"
+
+#: archive.php:24
+msgid "Erreur"
+msgstr "Error"
+
+#: archive.php:75
+msgid "Erreur, aucun r&eacute;sultat pour cette requ&ecirc;te."
+msgstr "Error, no results for this query."
+
+# Commentaires
+#: comments.php:36
+msgid "Cet article est prot&eacute;g&eacute; par un mot de passe."
+msgstr "This post is protected by a password."
+
+#: comments.php:59
+msgid "Ajouter le votre"
+msgstr "Add yours"
+
+#: comments.php:61
+msgid "commentaire"
+msgstr "comment"
+
+#: comments.php:79
+msgid ""
+"Merci ! Votre commentaire a été posté avec succès, il peut mettre quelques "
+"instants à apparaître."
+msgstr ""
+"Thank you! your comment has been posted successfully, it may take a few "
+"moments to appear."
+
+#: comments.php:84 comments.php:92
+msgid "Ajouter votre commentaire"
+msgstr "Add your comment"
+
+#: comments.php:93
+msgid "R&eacute;pondre &agrave; ce commentaire"
+msgstr "Reply to this comment"
+
+#: comments.php:99
+msgid "Connect&eacute; en tant que "
+msgstr "Connected as "
+
+#: comments.php:101 comments.php:102
+msgid "Se d&eacute;connecter"
+msgstr "Log out"
+
+#: comments.php:108
+msgid "Pseudo"
+msgstr "Pseudo"
+
+#: comments.php:112
+msgid "Adresse e-mail"
+msgstr "Email"
+
+#: comments.php:116
+msgid "Site Web"
+msgstr "Website"
+
+#: comments.php:121
+msgid "Votre commentaire"
+msgstr "Your comment"
+
+#: comments.php:125
+msgid "Envoyer le commentaire"
+msgstr "Send this comment"
+
+#: comments.php:133
+msgid "Les commentaires sont fermés."
+msgstr "Comments are closed"
+
+#: comments.php:142
+msgid "Trackback"
+msgstr "Trackback"
+
+#: comments.php:145 loop-comment.php:8
+msgid "Par"
+msgstr "By"
+
+#: footer.php:9
+msgid "WordPress par"
+msgstr "WordPress by"
+
+#: footer.php:13
+msgid "Tous droits réservés"
+msgstr "All rights reserved"
+
+#: header.php:22
+msgid "Accueil"
+msgstr "Home"
+
+#: loop-comment.php:16
+msgid "Répondre"
+msgstr "Answer"
+
+#: loop-short.php:7 loop.php:10
+msgid "Post&eacute; le"
+msgstr "Posted"
+
+#: loop-short.php:8 loop.php:11
+msgid "par"
+msgstr "by"
+
+#: loop.php:20
+msgid "Tags"
+msgstr "Tags"
+
+#: loop.php:23
+msgid "Catégories"
+msgstr "Categories"
+
+#: search.php:11
+msgid "r&eacute;sultat"
+msgstr "result"
+
+#: search.php:11
+msgid "pour la recherche :"
+msgstr "for the query:"
+
+#: search.php:18
+#, php-format
+msgid "Aucun r&eacute;sultat pour &quot;%s&quot;"
+msgstr "No results for &quot;%s&quot;"
+
+#: searchform.php:6
+msgid "Votre recherche"
+msgstr "Your search"
+
+#: includes/classes/clrz_forms.class.php:308
+msgid "Tous les types de formulaires"
+msgstr "Every kind of form"
+
+#: includes/classes/clrz_forms.class.php:312
+msgid "Formulaire "
+msgstr "Form "
+
+#: includes/functions/_enhance_admin.php:17
+msgid "Users"
+msgstr "Users"
+
+#: includes/functions/filters.php:71
+#, php-format
+msgid "Résultats de recherche pour \"%s\""
+msgstr "Search results for \"%s\""
+
+#: includes/functions/filters.php:94
+msgid "F Y"
+msgstr "F Y"
+
+#: includes/functions/filters.php:97
+msgid "j F Y"
+msgstr "F j, Y"
+
+# Dates relatives
+#: includes/functions/functions.php:327
+msgid "an"
+msgstr "year"
+
+#: includes/functions/functions.php:330
+msgid "mois"
+msgstr "month"
+
+#: includes/functions/functions.php:333
+msgid "semaine"
+msgstr "week"
+
+#: includes/functions/functions.php:336
+msgid "jour"
+msgstr "day"
+
+#: includes/functions/functions.php:339
+msgid "heure"
+msgstr "hour"
+
+#: includes/functions/functions.php:342
+msgid "minute"
+msgstr "minute"
+
+#: includes/functions/functions.php:345
+msgid "seconde"
+msgstr "second"
+
+#: includes/functions/functions.php:351
+#, php-format
+msgid "Il y a %d %s%s"
+msgstr "%d %s%s ago"
+
+#: includes/modules/static-blocks.php:38
+msgid "Blocks Statiques"
+msgstr "Statics Blocks"
+
+#: includes/params/clrz_options.php:7
+msgid "Réseaux sociaux"
+msgstr "Social networks"
+
+#: includes/params/clrz_options.php:8
+msgid "Méthodes de contact"
+msgstr "Contact methods"
+
+#: includes/params/clrz_options.php:9
+msgid "Correspondances de pages"
+msgstr "Pages matches"
+
+#: includes/params/clrz_options.php:10
+msgid "Configuration du site"
+msgstr "Website configuration"
+
+#: includes/widgets/widget_latest_posts.php:34
+msgid "Derniers articles"
+msgstr "Last posts"
+
+#: includes/widgets/widget_similar.php:18
+msgid "Articles Similaires"
+msgstr "Similar Posts"
+
+#: page-templates/page-contact.php:8
+msgid "Votre nom"
+msgstr "Your name"
+
+#: page-templates/page-contact.php:9
+msgid "Nom"
+msgstr "Name"
+
+#: page-templates/page-contact.php:15
+msgid "Votre adresse e-mail"
+msgstr "Your email address"
+
+#: page-templates/page-contact.php:16
+msgid "Email"
+msgstr "Email"
+
+#: page-templates/page-contact.php:22
+msgid "Contenu de votre message"
+msgstr "Content of your message"
+
+#: page-templates/page-contact.php:23
+msgid "Message"
+msgstr "Message"
+
+#: page-templates/page-contact.php:30
+msgid "Bonjour, <br />Vous avez re&ccedil;u un message sur le site"
+msgstr "Hi, <br />You've got a new message on the website"
+
+#: page-templates/page-contact.php:43
+msgid "Nouveau message du formulaire de contact"
+msgstr "New message from the contact form"
+
+#: page-templates/page-contact.php:49
+msgid "Merci de votre message !"
+msgstr "Thank your for your message!"
+
+#: page-templates/page-contact.php:86
+msgid "Envoyer votre message"
+msgstr "Send your message"
+
+# Telechargements
+#: page-templates/page-telechargements.php:23
+msgid "Fichier"
+msgstr "File"
+
+#: page-templates/page-telechargements.php:23
+msgid "T&eacute;l&eacute;charger ce fichier"
+msgstr "Download this file"
+
+#: tpl/tpl_pagination.php:18
+msgid "Suivant &rsaquo; "
+msgstr "Next &rsaquo; "
+
+#: tpl/tpl_pagination.php:19
+msgid "&lsaquo; Pr&eacute;c&eacute;dent"
+msgstr "&lsaquo; Pr&eacute;c&eacute;dent"
+
+#: tpl/footer/google_analytics.php:6
+msgid "Recherche"
+msgstr "Search"
+
+#~ msgid "Aucun résultat pour"
+#~ msgstr "No results for"
+
+#~ msgid "Mois pr&eacute;c&eacute;dent"
+#~ msgstr "Previous month"
+
+# Archive
+#~ msgid "Mois suivant"
+#~ msgstr "Next month"
+
+#~ msgid "F j, Y"
+#~ msgstr "j "
+
+#~ msgid "Contact"
+#~ msgstr "Contact"
+
+#~ msgid "Fil d’ariane"
+#~ msgstr "Breadcrumbs"
+
+#~ msgid "Contenu"
+#~ msgstr "Content"
+
+#~ msgid "Sidebar"
+#~ msgstr "Sidebar"
+
+#~ msgid "Pied de page"
+#~ msgstr "Footer"
+
+#, fuzzy
+#~ msgid "Parent "
+#~ msgstr "By"
+
+# Loops
+#, fuzzy
+#~ msgid "Ajouter "
+#~ msgstr "Author:"
+
+#~ msgid "Page Suivante"
+#~ msgstr "Next page"

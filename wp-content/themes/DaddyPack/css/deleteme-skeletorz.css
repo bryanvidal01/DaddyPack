@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*
+ * Feuille avec des styles par défaut.
+ * A piller puis à supprimer
+**/
+
+/* ----------------------------------------------------------
+  Loops
+---------------------------------------------------------- */
+
+.loop-short + .loop-short {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.post .post-info,
+.loop-short .post-info {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.loop-short .post-content {
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------------
+  Share Posts
+---------------------------------------------------------- */
+
+.share-post {
+    height: 25px;
+    margin-bottom: 25px;
+    opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+.share-post:hover {
+    opacity: 0.99;
+    filter: alpha(opacity=99);
+}
+
+.share-post li {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+
+.share-post li + li {
+    margin-left: 5px;
+}
+
+/* ----------------------------------------------------------
+  Commentaires
+---------------------------------------------------------- */
+
+.comment {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.comment.bypostauthor {
+    background-color: #f9f9f9;
+}
+
+.comment.even a {
+    color: #369;
+}
+
+.comment.odd a {
+    color: #963;
+}
+
+.comment .comment_avatar {
+    display: block;
+    float: left;
+    width: 46px;
+    height: 100%;
+    padding: 0 10px 0 0;
+}
+
+.comment-content {
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------
+  Messages CLRZ Core
+---------------------------------------------------------- */
+
+#clrz_messages li {
+    margin-bottom: 4px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    -webkit-background-clip: padding-box;
+}
+
+#clrz_messages li .close_error {
+    float: right;
+}
+
+#clrz_messages li.error {
+    border-color: #F00;
+    color: #900;
+    background-color: #F99;
+}
+
+#clrz_messages li.success {
+    border-color: #0C0;
+    color: #060;
+    background-color: #9F9;
+}
+
+/* ----------------------------------------------------------
+  Nice Archives
+---------------------------------------------------------- */
+
+.menu-archives {
+    clear: both;
+}
+
+.menu-archives li a,
+.menu-archives li {
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
+
+.menu-archives li {
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.menu-archives li a {
+    padding: 3px 5px;
+    background-color: #f0f0f0;
+}
+
+.menu-archives .current a {
+    background-color: #d0d0d0;
+}
+
+/* ----------------------------------------------------------
+  Lightbox JS
+---------------------------------------------------------- */
+
+#lightboxfilter {
+    background: #333;
+    background: rgba(0,0,0,0.6);
+}
+
+#containerlightbox {
+    border: 10px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-background-clip: padding-box;
+    -webkit-box-shadow: 0 0 3px #333;
+    -moz-box-shadow: 0 0 3px #333;
+    box-shadow: 0 0 3px #333;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#containerlightbox img {
+    display: block;
+}
+
+#containerlightbox a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    text-align: left;
+    text-indent: -9999px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#containerlightbox a:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+#containerlightbox a.next {
+    right: 0;
+    left: auto;
+}
+
+/* ----------------------------------------------------------
+  Divers
+---------------------------------------------------------- */
+
+#debug-footer {
+    padding-top: 10px;
+}
+
+#debug-footer p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+#debug-footer pre {
+    padding: 5px;
+    max-width: 100%;
+    overflow: auto;
+    font: 11px/1.3 monospace;
+    outline: 1px solid #e0e0e0;
+    color: #999;
+    background-color: #f0f0f0;
+}
+
+#debug-footer pre:hover {
+    color: #333;
+}

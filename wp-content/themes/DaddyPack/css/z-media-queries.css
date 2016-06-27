@@ -1,0 +1,67 @@
+/*
+ * media queries for responsive design
+ * these follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-width: 480px) {
+
+    /* Layout */
+
+    .centered-container {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        min-width: 0;
+    }
+
+    .centered-container > * {
+        max-width: none;
+    }
+
+    .cssn-lay,
+    .cssn-lay > .col-side,
+    .cssn-lay > .col-main {
+        display: block;
+        width: auto;
+    }
+
+    /* Header - Mobile */
+
+    .header-nav--mobile .main-header__menu,
+    .cssc-openclose,
+    .header-nav--mobile {
+        display: block;
+    }
+
+    .cssn-lay > .col-main + .col-side {
+        padding-left: 0;
+    }
+
+    .main-header__menu {
+        display: none;
+    }
+
+  /* uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* Tablette */
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+
+}

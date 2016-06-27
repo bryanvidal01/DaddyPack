@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+html {
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.main-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    font: 62.5% sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form
+-------------------------- */
+
+form {
+    padding: 15px 0;
+}
+
+label {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
+
+.hide-me {
+    position: absolute;
+    top: -9999px;
+}
+
+/* Share
+-------------------------- */
+
+div.share a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 5px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    background: url('../img/sprite-header.png') no-repeat -66px 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    *display: inline;
+}
+
+div.share a:hover {
+    opacity: 0.50;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50) ";
+    filter: alpha(opacity=50);
+}
+
+div.share a.mail {
+    width: 11px;
+    height: 13px;
+    background-position: -132px 0;
+}
+
+div.share a.twitter {
+    width: 18px;
+    height: 13px;
+    background-position: -66px 0;
+}
+
+div.share a.facebook {
+    width: 7px;
+    height: 12px;
+    background-position: -42px -1px;
+}
+
+/* Footer
+-------------------------- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #333;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.colorz {
+    float: right;
+}
+
+.copy {
+    display: block;
+    float: left;
+}
+
+.copy,
+.colorz {
+    display: block;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+}

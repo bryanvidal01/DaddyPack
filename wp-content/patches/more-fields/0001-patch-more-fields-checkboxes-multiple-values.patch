@@ -1,0 +1,52 @@
+From 63407c3a5cfc9972f9f6a785d2a00d3ffed4904c Mon Sep 17 00:00:00 2001
+From: Connect <julien@colorz.fr>
+Date: Wed, 9 Feb 2011 12:50:35 +0100
+Subject: [PATCH] patch more fields checkboxes (multiple values)
+
+---
+ .../more-fields/more-fields-field-types.php        |    2 +-
+ .../more-fields/more-fields-settings-object.php    |    8 +++++++-
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+
+diff --git a/wp-content/plugins/more-fields/more-fields-field-types.php b/wp-content/plugins/more-fields/more-fields-field-types.php
+index 061233f..9e1b9dc 100644
+--- a/wp-content/plugins/more-fields/more-fields-field-types.php
++++ b/wp-content/plugins/more-fields/more-fields-field-types.php
+@@ -76,7 +76,7 @@
+ 		**	CHECKBOX
+ 		*/
+ 		$f['checkbox']['label'] =  __('Checkbox', 'more-plugins');
+-		$f['checkbox']['html_item'] = "<label class='mf_check'><input class='%class%' type='checkbox' id='%key%' name='%key%' %selected% value='1'> %title%</label>";
++		$f['checkbox']['html_item'] = "<label class='mf_check'><input class='%class%' type='checkbox' id='%key%' name='%key%[]' %selected% value='%value%'> %value%</label>";
+ 		$f['checkbox']['html_selected'] = 'checked="checked"';
+ 		$f['checkbox']['html_after'] = "%caption%";
+ 		$f['checkbox']['values'] = false;
+diff --git a/wp-content/plugins/more-fields/more-fields-settings-object.php b/wp-content/plugins/more-fields/more-fields-settings-object.php
+index 5b0b7b9..878edca 100644
+--- a/wp-content/plugins/more-fields/more-fields-settings-object.php
++++ b/wp-content/plugins/more-fields/more-fields-settings-object.php
+@@ -225,6 +225,7 @@ class more_fields_admin extends more_plugins_admin_object_sputnik_7 {
+ 						if ($value || (!$value && get_post_meta($post_id, $key, true))) {
+ 						if ($value != get_post_meta($post_id, $key, true))  {
+ 							if ($field['field_type'] == 'wysiwyg') $value = wpautop($value);
++                                                        if ($field['field_type'] == 'checkbox') $value = implode(',',$_POST[$post_key]);
+ 							if (!add_post_meta($post_id, $key, $value, true)) 
+ 								update_post_meta($post_id, $key, $value);	
+ 						}
+@@ -373,7 +374,12 @@ class more_fields_admin extends more_plugins_admin_object_sputnik_7 {
+ 		// if ($value_stored) $html = str_replace('%selected%', $html_selected, $html);
+ 
+ 		// Does this needs to be checked/selected/ticked?
+-		if ($value && ($value == $value_stored)) $html = str_replace('%selected%', $html_selected, $html);
++                if($field['field_type']=='checkbox')
++               {
++                   $value_stored = explode(',',$value_stored);
++                   if ($value && (in_array($value, $value_stored))) $html = str_replace('%selected%', $html_selected, $html);
++               }
++                elseif ($value && ($value == $value_stored)) $html = str_replace('%selected%', $html_selected, $html);
+ 		else if ((!$value_stored) && ($value_raw != $value)) $html = str_replace('%selected%', $html_selected, $html);
+ 		else $html = str_replace('%selected%', '', $html);
+ 		if ($value_stored == 'checkbox_on') $html = str_replace('%selected%', $html_selected, $html);
+-- 
+1.7.1
+

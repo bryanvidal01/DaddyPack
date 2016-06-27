@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+    Modèle : Pagination
+   ------------------------------------------------------- */
+
+.cssn_pagination * {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+/* Style d'exemple */
+
+.cssn_pagination span,
+.cssn_pagination strong,
+.cssn_pagination a {
+    padding: 0 7px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-background-clip: border;
+}
+
+.cssn_pagination * {
+    line-height: 30px;
+}
+
+.cssn_pagination {
+    margin: 20px 0;
+}
+
+.cssn_pagination strong,
+.cssn_pagination .current,
+.cssn_pagination a:focus,
+.cssn_pagination a:hover {
+    border-color: #ccc;
+}
+
+/* ----------------------------------------------------------
+  Fil d'ariane
+---------------------------------------------------------- */
+
+.cssc-ariane {
+    height: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.cssc-ariane > li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+/* ----------------------------------------------------------
+   Divers
+   ------------------------------------------------------- */
+
+.no-content {
+    margin: 80px auto 120px;
+    text-align: center;
+    font-size: 20px;
+}

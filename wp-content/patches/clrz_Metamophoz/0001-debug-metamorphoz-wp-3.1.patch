@@ -1,0 +1,36 @@
+From 6a9e30dc0f4eb2b8405482f90cc71372ea04dcec Mon Sep 17 00:00:00 2001
+From: Connect <julien@colorz.fr>
+Date: Wed, 30 Mar 2011 21:23:28 +0200
+Subject: [PATCH] debug metamorphoz wp 3.1
+
+---
+ wp-content/plugins/clrz_MetaMorphoz.php |   13 +++++++++++++
+ 1 files changed, 13 insertions(+), 0 deletions(-)
+
+diff --git a/wp-content/plugins/clrz_MetaMorphoz.php b/wp-content/plugins/clrz_MetaMorphoz.php
+index 0dcdd04..19cf95a 100644
+--- a/wp-content/plugins/clrz_MetaMorphoz.php
++++ b/wp-content/plugins/clrz_MetaMorphoz.php
+@@ -293,6 +293,19 @@ class Clrz_MetaMorphoz{
+ 
+ 	     if(!$_POST)
+ 	     return $post;
++
++
++                foreach($_POST AS $k=>$v)
++	        {
++	         	if(array_key_exists($v['key'],$this->indexes_active)){
++                            $this->update_post_meta(0,$post_id,$v['key'],$v['value']);
++
++                        }
++
++
++        	}
++
++
+                 if(isset($_POST['meta']))
+ 	        foreach($_POST['meta'] AS $k=>$v)
+ 	        {
+-- 
+1.7.1
+

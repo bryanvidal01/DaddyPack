@@ -1,0 +1,51 @@
+From b7a5bcd764874bd786648d8175cd797233482354 Mon Sep 17 00:00:00 2001
+From: Connect <julien@colorz.fr>
+Date: Wed, 30 Mar 2011 21:02:17 +0200
+Subject: [PATCH] debug metamorphoz
+
+---
+ wp-content/plugins/clrz_MetaMorphoz.php |   16 +++++++++++-----
+ 1 files changed, 11 insertions(+), 5 deletions(-)
+
+diff --git a/wp-content/plugins/clrz_MetaMorphoz.php b/wp-content/plugins/clrz_MetaMorphoz.php
+index 41cde1b..0dcdd04 100644
+--- a/wp-content/plugins/clrz_MetaMorphoz.php
++++ b/wp-content/plugins/clrz_MetaMorphoz.php
+@@ -293,10 +293,14 @@ class Clrz_MetaMorphoz{
+ 
+ 	     if(!$_POST)
+ 	     return $post;
+-	        foreach($_POST AS $k=>$v)
++                if(isset($_POST['meta']))
++	        foreach($_POST['meta'] AS $k=>$v)
+ 	        {
+-	         	if(array_key_exists($k,$this->indexes_active))
+-		         	$this->update_post_meta(0,$post_id,$k,$v);
++	         	if(array_key_exists($v['key'],$this->indexes_active)){
++                            $this->update_post_meta(0,$post_id,$v['key'],$v['value']);
++                            
++                        }
++		         	
+ 
+         	}
+ 
+@@ -304,12 +308,14 @@ class Clrz_MetaMorphoz{
+         }
+ 
+         //do_action( "update_{$meta_type}_meta", $meta_id, $object_id, $meta_key, $_meta_value );
+-        function update_post_meta($meta_id, $object_id, $meta_key, $_meta_value)
++        function update_post_meta($meta_id, $object_id='', $meta_key='', $_meta_value='')
+         {
++              if(!$object_id OR !$meta_key OR !$_meta_value)
++                return;
+               global $wpdb;
+ 	            if(!array_key_exists($meta_key,$this->indexes_active))
+ 	            return;
+-
++                    
+             	$res = $wpdb->query('UPDATE '.$this->table_name.' SET '.$meta_key.'= "'.mysql_real_escape_string($_meta_value).'" WHERE post_id ="'.$object_id.'"');
+                if($res==0)
+                {
+-- 
+1.7.1
+

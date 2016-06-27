@@ -1,0 +1,35 @@
+From 3e38e91702b608197889cc1dc7319d7eb5143c18 Mon Sep 17 00:00:00 2001
+From: Connect <julien@colorz.fr>
+Date: Tue, 29 Mar 2011 14:59:25 +0200
+Subject: [PATCH] debug js more fields
+
+---
+ .../more-fields/more-fields-settings-object.php    |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+diff --git a/wp-content/plugins/more-fields/more-fields-settings-object.php b/wp-content/plugins/more-fields/more-fields-settings-object.php
+index 5fbafd2..bbd4f5e 100644
+--- a/wp-content/plugins/more-fields/more-fields-settings-object.php
++++ b/wp-content/plugins/more-fields/more-fields-settings-object.php
+@@ -73,14 +73,17 @@ class more_fields_admin extends more_plugins_admin_object_sputnik_7 {
+ 		global $more_fields;
+ 		$js = array();
+ 		foreach ($more_fields->field_types as $key => $field) {
++                    
+ 			if ($field['values']) $js[] = "(val == '$key')";
+ 		}
++               
+ 		$jsq = implode(' || ', $js);
+ 		?>
+ 		<script type="text/javascript">
+ 		//<![CDATA[
+ 			jQuery(document).ready(function($){
+-				var val = $("input[name=field_type]").val();
++				var val = $("input[name=field_type]:checked").val();
++                                console.log(val);
+ 				if (<?php echo $jsq; ?>) $('input[name=values]').removeAttr("disabled");
+ 				else $('input[name=values]').attr("disabled", true);			
+ 				$("input[name=field_type]").change(function() {
+-- 
+1.7.1
+

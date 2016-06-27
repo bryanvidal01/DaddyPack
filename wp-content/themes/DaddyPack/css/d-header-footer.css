@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Header
+---------------------------------------------------------- */
+
+.main-header {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px 0 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Logo
+-------------------------- */
+
+.main-header__logo {
+    margin: 0;
+}
+
+.main-header__logo a {
+    width: 275px;
+    height: 71px;
+    background-image: url(../images/header/logo.png);
+}
+
+/* Menu - Social
+-------------------------- */
+
+.main-header_links {
+    text-align: left;
+    font-size: 0;
+    line-height: 30px;
+}
+
+.main-header_links a,
+.main-header_links > li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: inherit;
+    vertical-align: middle;
+}
+
+/* Menu */
+
+.main-header__menu li + li {
+    margin-left: 10px;
+}
+
+/* Social */
+
+.main-header__social {
+    float: right;
+}
+
+.main-header__social li + li {
+    margin-left: 10px;
+}
+
+.main-header__social .cssc-btn {
+    width: 11px;
+    height: 11px;
+    border: 8px solid #DDD;
+    border-radius: 20px;
+    font-size: 10px;
+    background: #DDD url(../images/header/sprite-social.png) no-repeat 1px -1px;
+}
+
+.main-header__social .facebook {
+    background-position: -49px 0;
+}
+
+.main-header__social .rss {
+    background-position: -98px 0;
+}
+
+/* Menu - Mobile
+   ----------------------- */
+
+.header-nav--mobile {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    background-color: #DDD;
+    box-shadow: 8px 0 10px -4px rgba(0,0,0,0.2) inset;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+body.menu-open .header-nav--mobile,
+#header,
+.main-container {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+body.menu-open #header,
+body.menu-open .main-container {
+    -webkit-transform: translateX(-79%);
+    -moz-transform: translateX(-79%);
+    transform: translateX(-79%);
+}
+
+.main-cover {
+    display: none;
+    visibility: hidden;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 79%;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+body.menu-open .main-cover {
+    display: block;
+    visibility: visible;
+}
+
+.cssc-openclose {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: 0;
+}
+
+.cssc-openclose span {
+    position: relative;
+    margin: 0 auto;
+}
+
+.cssc-openclose span:before,
+.cssc-openclose span:after {
+    content: '';
+    position: absolute;
+}
+
+.cssc-openclose span,
+.cssc-openclose span:before,
+.cssc-openclose span:after {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #69C;
+}
+
+.cssc-openclose span:before {
+    margin-top: -7px;
+}
+
+.cssc-openclose span:after {
+    margin-top: 7px;
+}
+
+.cssc-openclose span {
+    -webkit-transition-duration: 0s;
+    -webkit-transition-delay: .2s;
+}
+
+body.menu-open .cssc-openclose span {
+    background-color: rgba(255,255,255,0.0);
+    -webkit-transition-delay: .2s;
+}
+
+.cssc-openclose span:before {
+    -webkit-transition-property: margin,-webkit-transform;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-delay: .2s,0;
+}
+
+body.menu-open .cssc-openclose span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(45deg);
+    -webkit-transition-delay: 0,.2s;
+}
+
+.cssc-openclose span:after {
+    -webkit-transition-property: margin,-webkit-transform;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-delay: .2s,0;
+}
+
+body.menu-open .cssc-openclose span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transition-delay: 0,.2s;
+}
+
+/* ----------------------------------------------------------
+  Footer
+---------------------------------------------------------- */
+
+.main-footer {
+    margin-top: 15px;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.main-footer__colorz {
+    float:right;
+}

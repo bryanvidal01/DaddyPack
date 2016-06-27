@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+#clrz_options_page {
+    width: 600px;
+}
+
+#clrz_options_client {
+    padding-top: 20px;
+}
+
+#clrz_options_page fieldset {
+    margin-bottom: 15px;
+    padding: 10px 0 5px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#clrz_options_page fieldset .legend {
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#clrz_options_page .blocoption > label,
+#clrz_options_page .blocoption > textarea,
+#clrz_options_page .blocoption > input {
+    display: block;
+    float: left;
+}
+
+#clrz_options_page .blocoption {
+    position: relative;
+    margin-bottom: 5px;
+    min-height: 30px;
+    overflow: hidden;
+}
+
+#clrz_options_page .wp-editor-wrap {
+    clear: both;
+    padding: 0 20px;
+}
+
+#clrz_options_page .blocoption.type-editor > label {
+    display: block;
+    width: auto;
+    padding: 0 0 10px 20px;
+}
+
+#clrz_options_page .blocoption .filterdisable {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(249,249,249);
+    background: rgba(249,249,249,0.7);
+}
+
+#clrz_options_page .blocoption > label {
+    width: 180px;
+    padding-left: 20px;
+}
+
+#clrz_options_page .clrz_clearfix {
+    clear: both;
+    padding-left: 202px;
+    font-size: 11px;
+}
+
+#clrz_options_page .clrz_clearfix label {
+    padding-left: 2px;
+}
+
+#clrz_options_page .blocption-submit input,
+#clrz_options_page .blocoption > input,
+#clrz_options_page .blocoption > input[type=email],
+#clrz_options_page .blocoption > textarea {
+    width: 250px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#conf_message_clrz_options {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: #060;
+}
+
+#clrz_options_page .blocoption > textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-clrz-options {
+    clear: both;
+    padding: 20px 0;
+    padding-left: 20px;
+    min-height: 10px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* ----------------------------------------------------------
+  Accordion
+---------------------------------------------------------- */
+
+.clrz-options-fieldset > .legend {
+    cursor: pointer;
+}
+
+.clrz-options-fieldset > .legend:after {
+    content: '▼';
+    margin-left: 3px;
+    font-size: 10px;
+    vertical-align: 0;
+    color: #000;
+}
+
+.clrz-options-fieldset .content-fieldset {
+    max-height: 500px;
+    overflow: auto;
+    opacity: 0.99;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    filter: alpha(opacity=99);
+}
+
+/* Closed
+-------------------------- */
+
+.clrz-options-fieldset.is-closed > .legend {
+    color: #999;
+}
+
+.clrz-options-fieldset.is-closed > .legend:after {
+    content: '▶';
+}
+
+.clrz-options-fieldset.is-closed .content-fieldset {
+    max-height: 0;
+    opacity: 0.0;
+    filter: alpha(opacity=0);
+}
+
+/* ----------------------------------------------------------
+  Upload media
+---------------------------------------------------------- */
+
+.wpu-options-upload-preview {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-bottom: 5px;
+    max-height: 140px;
+    max-width: 170px;
+}
+
+.wp-core-ui .button.wpuoptions_add_media {
+    margin-left: 200px;
+}
