@@ -4758,3 +4758,333 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+
+/* line 8, ../stylesheets/style.scss */
+html, body {
+  height: 100%;
+  font-family: "aktiv-grotesk";
+}
+
+/* line 13, ../stylesheets/style.scss */
+.fixed-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 30;
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #EEE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+/* line 24, ../stylesheets/style.scss */
+.fixed-menu.visible {
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+/* line 27, ../stylesheets/style.scss */
+.fixed-menu .logo {
+  color: #222;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+/* line 35, ../stylesheets/style.scss */
+.fixed-menu .menu-top {
+  float: right;
+  margin-top: 10px;
+}
+/* line 38, ../stylesheets/style.scss */
+.fixed-menu .menu-top li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* line 45, ../stylesheets/style.scss */
+.header-search {
+  height: calc(100% - 60px);
+  position: relative;
+  background-size: cover;
+}
+/* line 50, ../stylesheets/style.scss */
+.header-search:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 60, ../stylesheets/style.scss */
+.header-search .logo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+/* line 68, ../stylesheets/style.scss */
+.header-search .menu-top {
+  float: right;
+  margin-top: 30px;
+}
+/* line 71, ../stylesheets/style.scss */
+.header-search .menu-top li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 76, ../stylesheets/style.scss */
+.header-search .container-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 50px;
+}
+/* line 86, ../stylesheets/style.scss */
+.header-search .container-form .title-form {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+/* line 93, ../stylesheets/style.scss */
+.header-search .container-form .title-form strong {
+  font-weight: 800;
+}
+/* line 98, ../stylesheets/style.scss */
+.header-search .container-form input[type="text"] {
+  width: 70%;
+  box-sizing: border-box;
+  height: 40px;
+  display: block;
+  border: 0;
+  padding: 0 15px;
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+/* line 108, ../stylesheets/style.scss */
+.header-search .container-form input[type="submit"] {
+  width: 30%;
+  display: block;
+  border-radius: 0 5px 5px 0;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* line 119, ../stylesheets/style.scss */
+.container-header {
+  position: relative;
+  z-index: 30;
+  height: 100%;
+}
+
+/* line 125, ../stylesheets/style.scss */
+.button {
+  color: #fff;
+  background: #222;
+  border-radius: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .03em;
+  padding: 13px 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 0;
+}
+/* line 138, ../stylesheets/style.scss */
+.button.button-blue {
+  background: #57c2d4;
+}
+/* line 140, ../stylesheets/style.scss */
+.button.button-blue:hover {
+  background: #2aaac0;
+}
+/* line 144, ../stylesheets/style.scss */
+.button.button-pink {
+  background: #e02e5a;
+}
+/* line 146, ../stylesheets/style.scss */
+.button.button-pink:hover {
+  background: #d01c47;
+}
+/* line 151, ../stylesheets/style.scss */
+.button:hover, .button:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 157, ../stylesheets/style.scss */
+.container-presentation {
+  background: #57c2d4;
+  padding: 60px 0;
+}
+/* line 161, ../stylesheets/style.scss */
+.container-presentation .text {
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* line 167, ../stylesheets/style.scss */
+.fixed-barre {
+  background: #333644;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 30;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 178, ../stylesheets/style.scss */
+.fixed-barre.hidden {
+  -webkit-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+/* line 182, ../stylesheets/style.scss */
+.fixed-barre .close {
+  position: absolute;
+  right: 30px;
+  margin-top: 2px;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 189, ../stylesheets/style.scss */
+.fixed-barre .close:hover {
+  opacity: 1;
+}
+
+/* line 195, ../stylesheets/style.scss */
+.text, .text p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 201, ../stylesheets/style.scss */
+.title-section {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 30px;
+}
+/* line 208, ../stylesheets/style.scss */
+.title-section strong {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+/* line 217, ../stylesheets/style.scss */
+.container-dash {
+  margin-top: 60px;
+}
+
+/* line 221, ../stylesheets/style.scss */
+.text-dash {
+  position: relative;
+  text-align: center;
+}
+/* line 224, ../stylesheets/style.scss */
+.text-dash .title {
+  color: #57c2d4;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* line 233, ../stylesheets/style.scss */
+.dash {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+/* line 241, ../stylesheets/style.scss */
+.number {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border: 1px solid #DDD;
+  border-radius: 50%;
+  line-height: 55px;
+  color: #DDD;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* line 256, ../stylesheets/style.scss */
+.info-sup {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 265, ../stylesheets/style.scss */
+.strate-blue {
+  background: #e02e5a;
+  padding: 60px 0;
+}
+/* line 269, ../stylesheets/style.scss */
+.strate-blue .title-block {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+/* line 277, ../stylesheets/style.scss */
+.strate-blue .list {
+  margin-bottom: 60px;
+  color: #fff;
+}
+/* line 280, ../stylesheets/style.scss */
+.strate-blue .list li {
+  margin: 10px 0;
+  font-weight: 100;
+  font-size: 14px;
+}

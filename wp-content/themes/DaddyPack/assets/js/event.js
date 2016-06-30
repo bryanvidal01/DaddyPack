@@ -1,12 +1,15 @@
 jQuery(document).ready(function(){
-    jQuery('.block-video').click(function(){
-        var el = jQuery(this);
-        var id = el.data('video');
+    jQuery('.fixed-barre .close').click(function(){
+        jQuery('.fixed-barre').addClass('hidden');
+    });
 
-
-        if(!el.hasClass('isPlayed')){
-            jQuery(el).append("<iframe width='854' height='480' src='https://www.youtube.com/embed/"+ id +"?rel=0&autoplay=1&color=white&iv_load_policy=3&modestbranding=1&showinfo=0' frameborder='0' allowfullscreen></iframe>");
-            el.addClass('isPlayed');
+    jQuery(window).scroll(function(){
+        var currentScroll = jQuery(window).scrollTop();
+        var headerHeight = jQuery('.container-header').height();
+        if(currentScroll > headerHeight){
+            jQuery('.fixed-menu').addClass('visible')
+        }else{
+            jQuery('.fixed-menu').removeClass('visible')
         }
     })
 })

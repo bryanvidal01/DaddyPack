@@ -6,7 +6,9 @@ include TEMPLATEPATH . '/includes/before-header.php';
 <?php echo clrz_get_template_part('header','head'); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="container">
+
+
+<!-- <div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <div class="row">
@@ -26,4 +28,4 @@ include TEMPLATEPATH . '/includes/before-header.php';
             </div>
         </div>
     </div>
-</div>
+</div> -->

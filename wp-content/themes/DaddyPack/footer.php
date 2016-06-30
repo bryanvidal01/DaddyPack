@@ -1,20 +1,5 @@
 <?php include dirname( __FILE__ ) . '/includes/clrz-check-in-wp.php'; ?>
-<hr class="clearfix" />
-</div><!-- .main-container -->
-</div><!-- #main -->
-<footer id="footer" class="centered-container">
-    <div class="main-footer">
-        <div class="main-footer__copyright">
-            <span class="main-footer__colorz">
-                <?php echo __( 'WordPress par', 'clrz_lang' ); ?>
-                <a target="_blank" href="http://www.colorz.fr/" title="Colorz . Communication Interactive &amp; Cr&eacute;ative">Colorz</a>
-            </span>
-            <a href="<?php echo get_permalink( MENTIONSLEGALES_PAGEID ); ?>">
-                <?php echo '&copy; ' . date( 'Y' ) . ' ' .get_bloginfo( 'name' ) . ' — ' . __( 'Tous droits réservés', 'clrz_lang' ); ?>
-            </a>
-        </div>
-    </div>
-</footer>
+
 <?php
 wp_footer();
 echo clrz_get_template_part( 'footer', 'social_scripts' );
